@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('phSite.gameList', ['ngRoute'])
+angular.module('phSite.game.list', ['ngRoute'])
 .controller('gameListCtrl', function($scope) {
         $scope.gameInfoSet = [
             {

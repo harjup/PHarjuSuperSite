@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('phSite.view2', ['ngRoute'])
+angular.module('phSite.game.detail', ['ngRoute'])
 .controller('View2Ctrl', [function() {
 
 }]);

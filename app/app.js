@@ -3,20 +3,18 @@
 // Declare app level module which depends on views, and components
 angular.module('phSite', [
   'ngRoute',
-  'phSite.gameList',
-  'phSite.view2',
-  'phSite.game.card'
+  'phSite.game'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when("/game/:name",
       {
-          templateUrl: 'view2/view2.html',
+          templateUrl: 'game/detail/gameDetail.tpl.html',
           controller: 'View2Ctrl'
       })
       .when('/gameList', {
-            templateUrl: 'gameList/gameList.tpl.html',
+            templateUrl: 'game/list/gameList.tpl.html',
             controller: 'gameListCtrl'
-       });
-      //.otherwise({redirectTo: '/gameList'});
+       })
+      .otherwise({redirectTo: '/gameList'});
 }]);

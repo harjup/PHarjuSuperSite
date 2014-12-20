@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="phSite" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="phSite" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="phSite" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="phSite" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html lang="en" ng-app="phSite" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="phSite" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="phSite" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="phSite" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">-->
-  <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">-->
-  <link rel="stylesheet" href="app.css"/>
-  <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">-->
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">-->
+    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
     <link rel="stylesheet" href="../css/transitions.css"/>
-  <!--<script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>-->
+    <!--<script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>-->
 
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -20,19 +24,19 @@
     <script src="../js/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.js"></script>
     <script src="app.js"></script>
-    <script src="gameList/gameList.js"></script>
-    <script src="view2/view2.js"></script>
-    <script src="gameList/gameCard.js"></script>
-
+    <script src="game/game.mod.js"></script>
+    <script src="game/list/gameList.ctrl.js"></script>
+    <script src="game/detail/gameDetail.ctrl.js"></script>
+    <script src="game/list/gameCard.ctrl.js"></script>
 </head>
 <title>Paul Harju</title>
 <header>
     <img width="250" height="90" src="../assets/vidgam.png"/>
 </header>
 <body>
-  <ul class="menu">
+<ul class="menu">
     <li><a href="#/gameList">gameList</a></li>
-  </ul>
-  <div ng-view></div>
+</ul>
+<div ng-view></div>
 </body>
 </html>
