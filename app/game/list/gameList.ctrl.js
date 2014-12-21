@@ -1,36 +1,10 @@
 'use strict';
 
 angular.module('phSite.game.list', ['ngRoute'])
-.controller('gameListCtrl', function($scope) {
-        $scope.gameInfoSet = [
-            {
-                 title: "Ponbox",
-                 secondaryTitle: "A simple rhythm game",
-                 tertiaryTitle: "My first game I was ever proud of...",
-                 style: {'background-color': 'darkslateblue'},
-                 shortName: "Ponbox"
-
-            },
-            {
-                title: "Conflict of the Orbs",
-                secondaryTitle: "Sonic Physics Platformer",
-                tertiaryTitle: "My first platformer...",
-                style: {'background-color': 'darkolivegreen'},
-                shortName: "Orbs"
-            },
-            {
-                title: "SleepKnight",
-                secondaryTitle: "An adventure edutainment title",
-                tertiaryTitle: "Learn French, teach hens how to sleep.",
-                style: {'background-color': 'darkslateblue'},
-                shortName: "Sleep"
-            },
-            {
-                title: "Wizard Broadcast Special",
-                secondaryTitle: "Webby TV Adventure Thing",
-                tertiaryTitle: "Play with a friend.",
-                style: {'background-color': 'darkolivegreen'},
-                shortName: "Wizard"
-            }
-        ];
+.controller('GameListCtrl', function($scope, $http) {
+        //TODO: Abstract into repository
+        $http.get('../assets/data/content.json').then(function (result) {
+            var data = result.data;
+            $scope.gameInfoSet = data.gameCardContent;
+        });
 });

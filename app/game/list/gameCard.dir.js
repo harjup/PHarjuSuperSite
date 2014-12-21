@@ -16,6 +16,18 @@ var cardModule = angular.module('phSite.game.card', []);
         };
     });
 
+    cardModule.directive('phGameCardSmall', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'game/list/gameCardSmall.tpl.html',
+            controller: 'gameCardCtrl',
+            scope: {
+                gameInfo: '='
+            }
+        };
+    });
+
+
     cardModule.controller('gameCardCtrl', function($scope, $location) {
         $scope.cardClicked = function () {
             var targetPath = "game/" + $scope.gameInfo.shortName;
