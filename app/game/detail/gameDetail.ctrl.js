@@ -2,7 +2,8 @@
 
 angular.module('phSite.game.detail', ['ngRoute'])
 .controller('GameDetailCtrl', function($scope, $http, $routeParams) {
-        var gameName = $routeParams.name;
+        var vm = $scope;
+        vm.gameName = $routeParams.name;
 
         //TODO: Abstract into repository
         $http.get('../assets/data/content.json').then(function (result) {
@@ -10,10 +11,8 @@ angular.module('phSite.game.detail', ['ngRoute'])
             var gameCardContent = data.gameCardContent;
             var detailContent = data.detailContent;
 
-            $scope.gameInfoSet = gameCardContent;
-            $scope.detailTitle = detailContent[gameName.toLowerCase()].fullTitle;
+            vm.gameInfoSet = gameCardContent;
+
+            vm.info = detailContent[vm.gameName.toLowerCase()];
         });
-
-
-
 });

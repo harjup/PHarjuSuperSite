@@ -1,31 +1,35 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-9 bg-primary">
-            <!--<div class="col-lg-offset-2 col-lg-8 bg-primary">-->
+        <div class="col-lg-9" style="background-color: #303030">
             <h2 style="border-bottom:  0.1em solid rgba(224, 224, 224, 0.88);">
-                <a class="btn btn-default btn-sm" type="button" href="#/"><--</a>
-                {{detailTitle}}
+                {{info.fullTitle}}
+                <a class="btn btn-default btn-sm pull-right" type="button" href="#/"><i class="fa fa-reply"></i></a>
             </h2>
-
-            <div class="pull-right">
-                <button class="btn btn-block btn-danger">Play bideogame</button>
-                <button class="btn btn-block btn-success">Watch Video!!!</button>
-                <button class="btn btn-block btn-warning">View Source</button>
-            </div>
-            <div class="col-lg-8">
-                <br>
-
+            <div>
                 <div class="center-block">
-                    PICTURE
+                    <img ng-src="{{info.images}}" height=400>
                 </div>
                 <br>
 
-                DESCRIPTIVE CONTENT DESC RIPTI VE CONTENT DESCRIPTIVE CONTENT DESCRIPTIVE CONTENT DESCRIPT IVE CONTENT DESCR
-                IPTIVE CON TENT DESCRIPTIVE
-                DES CRIPTIVE CONTENT DESC RIPTIVE CONTENT DESCRIPTIVE CONTENT DESCR IPTIVE CONTENT DESCRIPTIVE CONTENT
-                DESCRIPTIVE CONTENT DESCRIPTIVE CO NTENT
-                DESCRIPTIVE CONTENT DESCRIPTIVE CONTENT DESC RIPTIVE CONTENT DESCRIPTIVE CONTENT DESCRIPTIVE CONT ENT
-                DESCRIP TIVE CONTENT DESCRIPTIVE CONTENT
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div ng-show="info.play !== undefined">
+                            <a class="btn btn-block btn-lg btn-danger" href="{{info.play}}">Play</a>
+                        </div>
+                        <div ng-show="info.play === undefined">
+                            <a class="btn btn-block btn-lg btn-danger" href="unity/{{gameName}}/WebPlayer.html">Play</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" ng-show="info.video">
+                        <a class="btn btn-block btn-lg btn-default" href="{{info.video}}">Watch Video!!!</a>
+                    </div>
+                    <div class="col-lg-3" ng-show="info.source">
+                        <a class="btn btn-block btn-lg btn-default" href="{{info.source}}">View Source</a>
+                    </div>
+                </div>
+
+                <br>
+                {{info.content}}
 
                 <br><br>
                 <br>
