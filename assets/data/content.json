@@ -32,26 +32,26 @@
 
   "detailContent" : {
     "ponbox" : {
-      "image" : [],
+      "images" : "../assets/images/TitleCards/PonboxTitleCard-700.png",
       "fullTitle" : "Ponbox",
       "content" : "Ponbox is a rhythm game inspired by Rhythm Heaven (Rhythm Tengoku). Observe the other dancing guy, and mimic his moves! Short and sweet."
     },
     "orbs" : {
-      "images" : "../assets/images/TitleCards/OrbsTitleCard.PNG",
+      "images" : "../assets/images/TitleCards/OrbsTitleCard-700.PNG",
       "fullTitle" : "Conflict of the Orbs",
       "content" : "Conflict of the Orbs of a 2D momentum-based platformer inspired by Sonic 2. It was developed over the course of a month for SAGamedev VII in July of 2012. You can jump! You can turn into a ball! There are special stages! Wow!!!",
       "//video" : "asdf"
     },
     "sleep" : {
-      "images" : "../assets/images/TitleCards/SleepKnightTitleCard.PNG",
+      "images" : "../assets/images/TitleCards/SleepKnightTitleCard-700.png",
       "fullTitle" : "Sleep Knight",
       "content" : "SleepKnight is a 3D Adventure game where your inventory consists of French Vocabulary words, developed for SaGamedev VIII in July of 2013 with a theme of “Subversive Edutainment”. (We messed up the subversive part) All NPCs speak french, so you have to collect words through contextual clues. You can also construct simple sentences in order to tell certain characters to do things. It turns out adventure games take a lot of work! We ended up completing two areas by the deadline, along with a special minigame to close it out. \n\n Walkthrough forthcoming.",
       "//video" : "asdf"
     },
     "wizard" : {
-      "images" : "../assets/images/TitleCards/WizardBroadcastTitleCard.PNG",
+      "images" : "../assets/images/TitleCards/WizardBroadcastTitleCard-700.PNG",
       "fullTitle" : "Wizard Broadcast Special",
-      "content" : "Wizard Broadcast is a 3D passive multiplayer variety show designed by incompetent wizards. Play it with a friend if possible! It was developed for SaGameDev VIII in July of 2014 with a theme of Public Access Television. It has 3 levels that play differently. There is also a lot of sign reading. This game is not a lot of fun, but there is twitter integration! And you can see the ghosts of any other plays, as well as leave comments that will stay in the game world forever!!!",
+      "content" : "Wizard Broadcast is a 3D passive multiplayer variety show designed by incompetent wizards. Play it with a friend if possible! It was developed for SaGameDev VIII in July of 2014 with a theme of Public Access Television. It has 3 levels that play differently. There is also a lot of sign reading. This game is not a lot of fun, but there is twitter integration! And you can see the ghosts of any other players, as well as leave comments that will stay in the game world forever!!!",
       "play" : "http://wizardbroadcast.azurewebsites.net/",
       "source" : "https://github.com/harjup/WizardBroadcast"
     }
