@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-9" style="background-color: #303030">
             <h2 style="border-bottom:  0.1em solid rgba(224, 224, 224, 0.88);">
-                {{info.fullTitle}}
+                <span ng-bind="info.fullTitle || '&nbsp;'"></span>
                 <a class="btn btn-default btn-sm pull-right" type="button" href="#/"><i class="fa fa-reply"></i></a>
             </h2>
             <div>
