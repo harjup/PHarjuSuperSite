@@ -9,11 +9,11 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when("/game/:name",
       {
-          templateUrl: 'game/detail/gameDetail.tpl.html',
+          templateUrl: 'app/game/detail/gameDetail.tpl.html',
           controller: 'GameDetailCtrl'
       })
       .when('/gameList', {
-            templateUrl: 'game/list/gameList.tpl.html',
+            templateUrl: 'app/game/list/gameList.tpl.html',
             controller: 'GameListCtrl'
        })
       .otherwise({redirectTo: '/gameList'});

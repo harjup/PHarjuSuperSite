@@ -8,7 +8,7 @@ var cardModule = angular.module('phSite.game.card', []);
     cardModule.directive('phGameCard', function() {
         return {
             restrict: 'E',
-            templateUrl: 'game/list/gameCard.tpl.html',
+            templateUrl: 'app/game/list/gameCard.tpl.html',
             controller: 'gameCardCtrl',
             scope: {
                 gameInfo: '='
@@ -19,7 +19,7 @@ var cardModule = angular.module('phSite.game.card', []);
     cardModule.directive('phGameCardSmall', function() {
         return {
             restrict: 'E',
-            templateUrl: 'game/list/gameCardSmall.tpl.html',
+            templateUrl: 'app/game/list/gameCardSmall.tpl.html',
             controller: 'gameCardCtrl',
             scope: {
                 gameInfo: '='
